@@ -10,6 +10,24 @@ optimization result lightning-fast load times br referencing PageSpeed Insights 
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  
+    <img data-src="logo1" alt="" height="100" width="100" class="img-fluiid-100">
+    <img data-src="logo2" alt="" height="100" width="100" class="img-fluiid-100">
+    <img data-src="logo3" alt="" height="100" width="100" class="img-fluiid-100">
+    <img data-src="logo4" alt="" height="100" width="100" class="img-fluiid-100">
+    <img data-src="logo5" alt="" height="100" width="100" class="img-fluiid-100">
+    <img data-src="logo6" alt="" height="100" width="100" class="img-fluiid-100">
+    <img data-src="logo7" alt="" height="100" width="100" class="img-fluiid-100">
 </body>
+<script>
+    var logo1 = "../image (3).png";
+    var logo2 = "../image (4).png";
+    var logo3 = "../img.png";
+    var logo4 = "../mobile-landscape.png";
+    var logo5 = "../photo (1).png";
+    var logo6 = "../photo.png";
+    var logo6 = "../picture (1).png";
+    for (let img of document.querySelectorAll('img[data-src]')) {
+	img.src = window[img.dataset.src]
+}
+</script>
 </html>
